@@ -1,0 +1,73 @@
+.in-progress .swiper {
+  width: 100%;
+  position: relative;
+}
+
+.in-progress {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.in-progress h2 {
+  margin-bottom: 50px;
+}
+
+.in-progress .container {
+  position: relative;
+}
+
+.in-progress-btn-next, .in-progress-btn-prev {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  border: 2px solid #000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.in-progress-btn-next {
+  left: -80px;
+}
+
+.in-progress-btn-prev svg {
+  transform: rotate(180deg);
+}
+
+.in-progress-btn-prev {
+  right: -80px;
+}
+
+@media (max-width: 1330px) {
+  .in-progress {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 840px) {
+  .in-progress-btn-next {
+    left: -40px;
+  }
+  .in-progress-btn-prev {
+    right: -40px;
+  }
+}
+@media (max-width: 405px) {
+  .in-progress-btn-next, .in-progress-btn-prev {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+  }
+  .in-progress {
+    width: 100%;
+  }
+  .in-progress-btn-next {
+    left: 0px;
+  }
+  .in-progress-btn-prev {
+    right: 0px;
+  }
+}

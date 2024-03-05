@@ -1,0 +1,23 @@
+.pjt-gallery {
+  margin-top: 50px;
+}
+
+.pjt-gallery-main {
+  width: 100%;
+}
+
+.pjt-gallery-photos {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  overflow: auto;
+}
+
+.pjt-gallery-photos img {
+  width: 200px;
+  cursor: pointer;
+}
+
+.pjt-gallery-photos-active {
+  border: 3px solid var(--yellow);
+}

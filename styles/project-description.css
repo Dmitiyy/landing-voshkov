@@ -1,0 +1,72 @@
+.pjt-description {
+  margin-top: 100px;
+}
+
+.pjt-description .pjt-btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.pjt-description .pjt-btns .pjt-btns-tab-1, .pjt-btns-tab-2 {
+  height: 50px;
+  transition: all .2s;
+  font-size: 28px;
+  font-family: var(--dm);
+  cursor: pointer;
+  width: 100%;
+  border-bottom: 2px solid #D6D6D6;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+.pjt-btns-active {
+  border-bottom: 2px solid var(--yellow) !important;
+  font-weight: bold !important; 
+}
+
+.pjt-block-active {
+  display: inline-block !important;
+}
+
+.pjt-btns button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--yellow);
+  font-weight: bold;
+  font-size: 20px;
+  font-family: var(--dm);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.pjt-btns button svg {
+  margin-right: 10px;
+}
+
+.pjt-description__block-1, .pjt-description__block-2 {
+  margin-top: 50px;
+  line-height: 28px;
+  font-size: 18px;
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .pjt-description {
+    margin-top: 50px;
+  }
+
+  .pjt-description .pjt-btns .pjt-btns-tab-1, .pjt-btns-tab-2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .pjt-btns {
+    flex-wrap: wrap-reverse;
+  }
+  .pjt-btns button {
+    height: 56px;
+  }
+}
